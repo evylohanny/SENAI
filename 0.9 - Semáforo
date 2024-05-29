@@ -1,0 +1,21 @@
+programa {
+  funcao inicio() {
+    
+cadeia corDigitada
+cadeia corUm = "verde" , corDois = "amarelo" , corTres = "vermelho"
+
+escreva("Digite a cor que aparece no semáforo: ")
+leia(corDigitada)
+
+se(corDigitada == corUm){
+  escreva("\nPode seguir adiante :D")
+
+}senao se(corDigitada == corDois){
+  escreva("\nAlerta, pare!")
+
+}senao se(corDigitada == corTres){
+  escreva("\nPare imediatamente!!!")
+
+}
+}
+}
