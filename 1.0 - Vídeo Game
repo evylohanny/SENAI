@@ -1,0 +1,28 @@
+programa {
+  funcao inicio() {
+    
+inteiro vidaPersonagem = 100
+real danoSofrido
+real calculoVida
+inteiro relUm = 0 , relDois = 1 , relTres = 20 , relQuatro = 21 , relCinco = 50 , relseis = 51 , relSete = 100
+
+escreva("Digite o valor do ataque sofrido: ")
+leia(danoSofrido)
+
+calculoVida = vidaPersonagem - danoSofrido
+
+se(calculoVida <= relUm){
+  escreva("\nGame Over :/")
+
+}senao se(calculoVida <= relDois ou calculoVida < relTres){
+  escreva("\nDano crítico, quase sem vida!")
+
+}senao se(calculoVida <= relQuatro ou calculoVida < relCinco){
+  escreva("\nDano moderado, vida estável")
+
+}senao se(calculoVida <= relseis ou calculoVida < relSete){
+  escreva("Dano leve, vida boa ;D")
+
+}
+}
+}
