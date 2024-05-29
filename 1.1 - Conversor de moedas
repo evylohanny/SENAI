@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+
+real valorDolar , valorconvertido
+real taxaCambio
+
+escreva("Digite o valor do dólar que deseja converter: US$")
+leia(valorDolar)
+
+escreva("Digite o valor da taxa de câmbio: R$")
+leia(taxaCambio)
+
+valorconvertido = valorDolar * taxaCambio
+
+se(valorconvertido > taxaCambio){
+
+  escreva("\nO dólar está caro :/\n")
+  escreva("Valor total convertido: US$" , valorconvertido)
+
+}senao{
+  
+  escreva("\nO dólar está barato :D\n")
+  escreva("Valor total convertido: US$" , valorconvertido)
+
+}
+}
+}
