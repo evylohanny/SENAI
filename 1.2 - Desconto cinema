@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+inteiro idadeUsuario
+inteiro relUm = 12 , relDois = 18
+
+escreva("Digite a sua idade: ")
+leia(idadeUsuario)
+
+se(idadeUsuario < relUm){
+
+  escreva("\nVocê ganhou um desconto de 50% no ingresso do cinema :D!\n")
+
+}senao se(idadeUsuario >= relUm e idadeUsuario <= relDois){
+
+  escreva("\nVocê ganhou um desconto de 25% no ingresso do cinema :D\n")
+
+}senao{
+
+  escreva("\nVocê não ganhou um desconto no ingresso do cinema :/\n")
+
+}
+}
+}
