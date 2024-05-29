@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+cadeia idadePessoa
+inteiro tempoTrabalho
+
+escreva("Digite sua idade: ")
+leia(idadePessoa)
+
+escreva("\nDigite a quanto tempo(ano(os))você trabalha: ")
+leia(tempoTrabalho)
+
+se(idadePessoa >= 65 ou tempoTrabalho >= 30){
+  escreva("\nVocê pode se aposentar :D")
+
+}senao se(idadePessoa >= 60 e tempoTrabalho >= 25){
+  escreva("\nVocê pode se aposentar :D")
+
+}senao{
+  escreva("\nVocê não pode se aposentar :/")
+
+}
+}
+}
