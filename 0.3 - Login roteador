@@ -1,0 +1,26 @@
+programa {
+  funcao inicio() {
+
+cadeia nomeUsuario = "admin"
+inteiro senhaUsuario = 123
+cadeia usernameUsuario
+inteiro passwordUsuario
+
+escreva("Digite seu username para login: ")
+leia(usernameUsuario)
+
+escreva("\nDigite o password para concluir o acesso: ")
+leia(passwordUsuario)
+
+se(usernameUsuario == nomeUsuario e passwordUsuario == senhaUsuario){
+  escreva("\nLogin efetuado com sucesso!")
+
+}senao se(usernameUsuario != nomeUsuario){
+  escreva("\nUsername incorreto!")
+
+}se(passwordUsuario != senhaUsuario){
+  escreva("\nPassword incorreto!")
+
+}
+}
+}
