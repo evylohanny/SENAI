@@ -1,0 +1,20 @@
+programa {
+  funcao inicio() {
+
+inteiro idadeUsuario
+inteiro idadeSuficiente = 18
+
+escreva("Digite a sua idade: ")
+leia(idadeUsuario)
+
+se(idadeUsuario >= idadeSuficiente){
+
+  escreva("\nVocê pode dirigir :D!\n")
+
+}senao{
+
+  escreva("\nVocê ainda não pode dirigir:/\n")
+
+}
+}
+}
