@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+    
+cadeia nomePessoa
+inteiro idadePessoa
+cadeia comorbidadePessoa
+real relUm = 60 
+cadeia relDois = "sim"
+
+escreva("Digite seu nome: ")
+leia(nomePessoa)
+
+escreva("\nDigite sua idade: ")
+leia(idadePessoa)
+
+escreva("\nVocê possui comorbidade? ")
+leia(comorbidadePessoa)
+
+se(idadePessoa >= relUm ou comorbidadePessoa == relDois){
+  escreva("\nVocê pode se vacinar :D")
+
+}senao{
+  escreva("\nVocê não pode se vacinar :/")
+
+}
+}
+}
