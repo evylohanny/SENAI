@@ -1,0 +1,35 @@
+programa {
+  funcao inicio() {
+
+cadeia primeiraFrutaDigitada , segundaFrutaDigitada , terceiraFrutaDigitada
+cadeia frutaSorteUm = "Cereja" , frutaSorteDois = "Laranja"
+inteiro relUm = 100 , relDois = 80 , relTres = 50 , relQuatro = 25
+
+escreva("Digite a primeira fruta sorteada: ")
+leia(primeiraFrutaDigitada)
+
+escreva("\nDigite a segunda fruta sorteada: ")
+leia(segundaFrutaDigitada)
+
+escreva("\nDigite a terceira fruta sorteada:")
+leia(terceiraFrutaDigitada)
+
+se(primeiraFrutaDigitada == frutaSorteUm e segundaFrutaDigitada == frutaSorteUm e terceiraFrutaDigitada == frutaSorteUm){
+  
+  escreva("\nValor ganho: R$" , relUm , "\n")
+
+}senao se(primeiraFrutaDigitada == frutaSorteDois e segundaFrutaDigitada == frutaSorteDois e terceiraFrutaDigitada == frutaSorteDois){
+
+  escreva("\nValor ganho: R$" , relDois , "\n")
+
+}senao se(primeiraFrutaDigitada == frutaSorteUm e segundaFrutaDigitada == frutaSorteDois e terceiraFrutaDigitada == frutaSorteUm){
+
+  escreva("\nValor ganho: R$" , relTres , "\n")
+
+}senao se(primeiraFrutaDigitada == frutaSorteDois e segundaFrutaDigitada == frutaSorteUm e terceiraFrutaDigitada == frutaSorteDois){
+
+  escreva("\nValor ganho: R$" , relQuatro , "\n")
+
+}
+}
+}
