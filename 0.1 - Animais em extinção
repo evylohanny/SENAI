@@ -19,5 +19,6 @@ se(populacao >= relUm e populacao <= relDois){
 
 }senao
   escreva("\n!Espécie vulnerável!")
-  }
+
+}
 }
