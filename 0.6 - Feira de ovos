@@ -1,0 +1,27 @@
+programa {
+  funcao inicio() {
+ 
+inteiro quantidadeOvos
+real somaTotalUm , somaTotalDois , somaTotalTres
+
+escreva("Digite o número de ovos que deseja comprar: ")
+leia(quantidadeOvos)
+
+se(quantidadeOvos <= 12){
+
+  somaTotalUm = quantidadeOvos * 0.40
+  escreva("\nValor Total da compra: R$" , somaTotalUm)
+
+}senao se(quantidadeOvos >= 13 e quantidadeOvos <= 24){
+
+  somaTotalDois = quantidadeOvos * 0.30
+  escreva("\nValor total da compra: R$" , somaTotalDois)
+
+}senao se(quantidadeOvos >= 25){
+
+  somaTotalTres = quantidadeOvos * 0.25
+  escreva("\nValor total da compra: R$" , somaTotalTres)
+
+}
+}
+}
