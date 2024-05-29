@@ -1,0 +1,71 @@
+programa {
+  funcao inicio() {
+
+real numeroUm , numeroDois , numeroTres , numeroQuatro
+real maiorNumero = 0 , menorNumero = 100000000000
+real somaDosNumeros , subtracaoDosNumeros
+
+escreva("\nDigite o primeiro número: ")
+leia(numeroUm)
+
+  se(numeroUm > maiorNumero){
+   maiorNumero = numeroUm
+} se(numeroUm < menorNumero){
+  menorNumero = numeroUm
+}
+
+escreva("\nDigite o segundo número: ")
+leia(numeroDois)
+
+  se(numeroDois > maiorNumero){
+   maiorNumero = numeroDois
+} se(numeroDois < menorNumero){
+  menorNumero = numeroDois
+}
+
+escreva("\nDigite o terceiro número: ")
+leia(numeroTres)
+
+  se(numeroTres > maiorNumero){
+   maiorNumero = numeroTres
+} se(numeroTres < menorNumero){
+  menorNumero = numeroTres
+}
+
+escreva("\nDigite o quarto número: ")
+leia(numeroQuatro)
+
+  se(numeroQuatro > maiorNumero){
+   maiorNumero = numeroQuatro
+} se(numeroQuatro < menorNumero){
+  menorNumero = numeroQuatro
+}
+
+se(numeroUm == numeroDois ou numeroUm == numeroTres ou numeroUm == numeroQuatro){
+  escreva("\nVocê digitou números repetido! Tente novamente\n")
+  inicio()
+
+}senao se(numeroDois == numeroUm ou numeroDois == numeroTres ou numeroDois == numeroQuatro){
+  escreva("\nVocê digitou números repetido! Tente novamente\n")
+  inicio()
+
+}senao se(numeroTres == numeroUm ou numeroTres == numeroDois ou numeroTres == numeroQuatro){
+  escreva("\nVocê digitou números repetido! Tente novamente\n")
+  inicio()
+
+}senao se(numeroQuatro == numeroUm ou numeroQuatro == numeroDois ou numeroQuatro == numeroTres){
+  escreva("\nVocê digitou números repetido! Tente novamente\n")
+  inicio()
+
+}senao{
+
+somaDosNumeros = numeroUm + numeroDois + numeroTres + numeroQuatro
+subtracaoDosNumeros = somaDosNumeros - maiorNumero - menorNumero
+
+escreva("\nMaior número: " , maiorNumero)
+escreva("\nMenor número: " , menorNumero)
+escreva("\nA soma dos dois números do meio são: " , subtracaoDosNumeros)
+
+}
+}
+}
