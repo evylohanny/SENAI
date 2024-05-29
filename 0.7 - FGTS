@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+
+cadeia motivoSaida , motivoUm = "justa causa" , motivoDois = "sem justa causa"
+real valorFGTS , valorReceber
+
+escreva("Digite o motivo da sua saída da empresa(justa ou não): ")
+leia(motivoSaida)
+
+escreva("\nDigite o valor do seu FGTS: ")
+leia(valorFGTS)
+
+se(motivoSaida == motivoUm){
+
+valorReceber = valorFGTS + 4000
+escreva("\nValor a receber: R$" , valorReceber)
+
+}senao se(motivoSaida == motivoDois){
+
+valorReceber = valorFGTS - 0.15
+escreva("\nValor a receber: R$" , valorReceber)
+
+}
+}
+}
