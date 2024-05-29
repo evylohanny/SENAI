@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+
+real populacao
+cadeia nomeEspecie
+real relUm = 200 , relDois = 500 , relTres = 1000 , relQuatro = 5000
+
+escreva("Digite o nome da espécie:")
+leia(nomeEspecie)
+
+escreva("\nDigite o número total de indivíduos da espécie:")
+leia(populacao)
+
+se(populacao >= relUm e populacao <= relDois){
+  escreva("\n!!!Espécie criticamente em perigo!!!")
+
+}senao se(populacao >= relDois e populacao <= relTres){
+  escreva("\n!!Espécie em perigo!! ")
+
+}senao
+  escreva("\n!Espécie vulnerável!")
+  }
+}
