@@ -1,0 +1,29 @@
+programa {
+  funcao inicio() {
+
+real ladoTrianguloUm , ladoTrianguloDois , ladoTrianguloTres
+
+escreva("Digite o tamanho do primeiro lado do triângulo: ")
+leia(ladoTrianguloUm)
+
+escreva("\nDigite o tamanho do segundo lado do triângulo: ")
+leia(ladoTrianguloDois)
+
+escreva("\nDigite o tamanho do terceiro lado do triângulo: ")
+leia(ladoTrianguloTres)
+
+se(ladoTrianguloUm == ladoTrianguloDois e ladoTrianguloUm == ladoTrianguloTres e ladoTrianguloDois == ladoTrianguloTres){
+
+  escreva("\nTrata-se de um triângulo equilátero\n")
+
+}senao se(ladoTrianguloUm == ladoTrianguloDois ou ladoTrianguloUm == ladoTrianguloTres ou ladoTrianguloDois == ladoTrianguloTres){
+
+  escreva("\nTrata-se de um triângulo isósceles\n")
+
+}senao se(ladoTrianguloUm != ladoTrianguloDois e ladoTrianguloUm != ladoTrianguloTres e ladoTrianguloDois != ladoTrianguloTres){
+
+  escreva("\nTrata-se de um triângulo escaleno\n")
+
+}
+}
+}
